@@ -13,8 +13,8 @@ from tany.line.ttypes import *
 EMAIL_REGEX = re.compile('[^@]+@[^@]+\\.[^@]+')
 
 class Login(object):
-    UA = "Line/1.4.21"
-    LA = "CHROMEOS\t1.4.21\tChrome_OS\t1"
+    UA = "Line/8.9.1"
+    LA = "CHROMEOS\t2.1.0\tCHROMEOS\t10.0.0"
 
     auth_query_path = "/api/v4/TalkService.do"
     http_query_path = '/S4'
@@ -36,8 +36,8 @@ class Login(object):
         print (callback)
         
     def __init__(self, sid = None, password = None, callback = call, uke = None, com_name = 'CHROME OS'):
-        UA = "Line/1.4.21"
-        LA = "CHROMEOS\t1.4.21\tChrome_OS\t1"
+        UA = "Line/8.9.1"
+        LA = "CHROMEOS\t2.1.0\tCHROMEOS\t10.0.0"
         self._headers['User-Agent'] = UA
         self._headers['X-Line-Application'] = LA
         self.userid = sid
